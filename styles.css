@@ -1,0 +1,34 @@
+html, body{
+    background-color: #6E8894;
+}
+
+a{
+    color: #92140C;
+}
+
+a:hover{
+    color: #4c0b06;
+}
+
+hr{
+    color:#cec3be;
+    border-width: 1px;
+    opacity: 1;
+    border-style: solid;
+}
+
+.card{
+    background-color: #1E1E24;
+    color: #cec3be;
+}
+
+.main-image{
+    background-image: url('https://www.vexrobotics.com/media/landing_pages/get_started/vexv5-logo.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #111D4A;
+}
+
+.section-title{
+    font-size: 3em;
+}
