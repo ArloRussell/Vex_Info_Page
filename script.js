@@ -1,4 +1,5 @@
 let vexDays = [
+    "2025-8-16",
     "2025-9-16",
     "2025-9-23",
     "2025-9-30",
@@ -12,13 +13,13 @@ let vexDays = [
     "2025-12-2",
     "2025-12-9",
     "2025-12-16",
-    "2025-1-6",
-    "2025-1-13",
-    "2025-1-20",
-    "2025-1-27",
-    "2025-2-3",
-    "2025-2-10",
-    "2025-2-17",
+    "2026-1-6",
+    "2026-1-13",
+    "2026-1-20",
+    "2026-1-27",
+    "2026-2-3",
+    "2026-2-10",
+    "2026-2-17",
 ]
 
 let today = new Date();
@@ -37,6 +38,18 @@ for (let v of vexDays){
     }else{
         document.getElementById('yes').classList.add('hidden');
         document.getElementById('no').classList.remove('hidden');
+        break;
+    }
+}
+
+for (v of vexDays){
+    let nextDate = new Date(v);
+    console.log(nextDate);
+    if (nextDate > today){
+        console.log(nextDate);
+        console.log(nextDate.getMonth() + 1);
+        console.log(nextDate.getDay());
+        document.getElementById('next').innerText = `${nextDate.getMonth()} ${nextDate.getDay()}`;
         break;
     }
 }
