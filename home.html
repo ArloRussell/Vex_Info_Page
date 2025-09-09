@@ -10,7 +10,8 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="col-11 mx-auto mt-2">
+    <div class="col-11 mx-auto mt-2 mb-5">
+        <!-- title -->
         <div class="card p-2 rounded-0 border-0">
             <h1 class="text-center m-0">
                 <img src="https://blob.gifcities.org/gifcities/4YEE6OVGGNWENWK3LPM33BP4X3VTSHSW.gif" alt="">
@@ -19,6 +20,7 @@
             </h1>
         </div>
         <hr class="m-0 my-2">
+        <!-- directory & image -->
         <div class="row mb-3">
             <div class="col-lg-4 pe-lg-1">
                 <div class="card p-2 rounded-0 border-0">
@@ -31,19 +33,26 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-8 ps-lg-1">
+            <div class="col-lg-8 ps-lg-1 pt-2 pt-lg-0">
                 <div class="card p-2 rounded-0 h-100 border-0">
-                    <div class="card rounded-0 border-0 h-100 main-image"></div>
+                    <div class="card rounded-0 border-0 h-100 main-image" style="min-height: 100px;"></div>
                 </div>
             </div>
         </div>
+        <!-- schedule -->
         <div id="schedule">
-            <div class="card p-2 rounded-0 border-0 justify-content-center">
-                <h2 class="m-0 text-center section-title">
-                    <img src="https://gifcity.carrd.co/assets/images/gallery85/d37f747c.gif?v=e3c0bc0f">
-                    Our Schedule
-                    <img src="https://gifcity.carrd.co/assets/images/gallery81/9aa47f49.gif?v=e3c0bc0f">
-                </h2>
+            <div class="card p-2 rounded-0 border-0 align-items-center">
+                <div class="row align-items-center w-100">
+                    <div class="col-3 d-flex justify-content-end">
+                        <img src="https://gifcity.carrd.co/assets/images/gallery85/d37f747c.gif?v=e3c0bc0f" style="max-width: 80px; max-height: 80px;">
+                    </div>
+                    <div class="col-6">
+                        <h2 class="m-0 text-center section-title">Our Schedule</h2>
+                    </div>
+                    <div class="col-3">
+                        <img src="https://gifcity.carrd.co/assets/images/gallery81/9aa47f49.gif?v=e3c0bc0f" style="max-width: 80px; max-height: 80px;">
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 pe-lg-1 mt-2">
@@ -84,13 +93,37 @@
                 </div>
             </div>
         </div>
+        <!-- game -->
         <div id="game">
-            <div class="card p-2 rounded-0 border-0 justify-content-center mt-4">
-                <h2 class="m-0 text-center section-title">
-                    <img src="https://blob.gifcities.org/gifcities/YVFJSPFFJ6GHCWIWF7MSHMTHHA67UXL5.gif">
-                    The Game
-                    <img src="https://blob.gifcities.org/gifcities/42NZCZJVTY4FPGLFA4H6VUJ5CY4IPBUI.gif">
-                </h2>
+            <div class="card p-2 rounded-0 border-0 align-items-center mt-5">
+                <div class="row align-items-center w-100">
+                    <div class="col-3 d-flex justify-content-end">
+                        <img src="https://blob.gifcities.org/gifcities/YVFJSPFFJ6GHCWIWF7MSHMTHHA67UXL5.gif" style="max-width: 80px; max-height: 80px;">
+                    </div>
+                    <div class="col-6">
+                        <h2 class="m-0 text-center section-title">The Game</h2>
+                    </div>
+                    <div class="col-3">
+                        <img src="https://blob.gifcities.org/gifcities/JBWRB2IQUAS6STS2C5V2OLXGPMU3PKET.gif" style="max-width: 80px; max-height: 80px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-3 pe-lg-1">
+                    <div class="card p-2 rounded-0 border-0 mb-2 h-100">
+                        <h3 class="text-center m-0">Name of the Game!</h3>
+                        <hr>
+                        <h4 class="text-center">"Push Back"</h4>
+                        <p>The object of the game is to attain a higher score than the opposing Alliance by Scoring Blocks in Goals, Controlling zones within Goals, and Parking in defined zones at the end of the Match.</p>
+                        <h5 class="text-center">Link To Manual:</h5>
+                        <a href="https://link.vex.com/docs/25-26/v5rc-pushback-manual"><img class="img-link" src="https://content.vexrobotics.com/images/vexedr/Competition/2020Update/GameManual.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 ps-lg-1 mt-2 mt-lg-0">
+                    <div class="card p-2 rounded-0 border-0 justify-content-center align-items-center h-100">
+                        <iframe class="video" src="https://www.youtube.com/embed/ocmONiVun9M?si=dX_vefj38kI1kdTz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -20,11 +20,26 @@ let vexDays = [
     "2026-2-3",
     "2026-2-10",
     "2026-2-17",
-]
+];
+
+let months = [
+    "Jan.",
+    "Feb.",
+    "Mar.",
+    "Apr.",
+    "May",
+    "Jun.",
+    "Jul.",
+    "Aug.",
+    "Sept.",
+    "Oct.",
+    "Nov.",
+    "Dec."
+];
 
 let today = new Date();
 let dd = String(today.getDate());
-let mm = String(today.getMonth() + 1);
+let mm = String(today.getMonth());
 let yyyy = today.getFullYear();
 let todaystr = yyyy + '-' + mm + '-' + dd;
 
@@ -49,7 +64,7 @@ for (v of vexDays){
         console.log(nextDate);
         console.log(nextDate.getMonth() + 1);
         console.log(nextDate.getDay());
-        document.getElementById('next').innerText = `${nextDate.getMonth()} ${nextDate.getDay()}`;
+        document.getElementById('next').innerText = `${months[nextDate.getMonth()]} ${nextDate.getDate()}`;
         break;
     }
 }

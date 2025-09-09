@@ -30,9 +30,19 @@ hr{
 }
 
 .section-title{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .hidden{
     display: none;
+}
+
+.img-link:hover{
+    filter:invert();
+}
+
+.video{
+    width: 889px;
+    height: 500px;
+    max-width: 100%;
 }
