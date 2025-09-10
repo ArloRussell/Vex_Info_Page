@@ -46,3 +46,7 @@ hr{
     height: 500px;
     max-width: 100%;
 }
+
+.impo{
+    border: 4px double red;
+}

@@ -1,5 +1,4 @@
 let vexDays = [
-    "2025-8-16",
     "2025-9-16",
     "2025-9-23",
     "2025-9-30",
@@ -38,8 +37,9 @@ let months = [
 ];
 
 let today = new Date();
+today.setHours(0, 0, 0, 0);
 let dd = String(today.getDate());
-let mm = String(today.getMonth());
+let mm = String(today.getMonth()+1);
 let yyyy = today.getFullYear();
 let todaystr = yyyy + '-' + mm + '-' + dd;
 
@@ -60,11 +60,19 @@ for (let v of vexDays){
 for (v of vexDays){
     let nextDate = new Date(v);
     console.log(nextDate);
-    if (nextDate > today){
-        console.log(nextDate);
+    console.log(today);
+    console.log
+    if (nextDate >= today){
         console.log(nextDate.getMonth() + 1);
-        console.log(nextDate.getDay());
+        console.log(nextDate.getDate());
         document.getElementById('next').innerText = `${months[nextDate.getMonth()]} ${nextDate.getDate()}`;
         break;
     }
+}
+
+let anno = document.getElementById('anno');
+let annoText = document.getElementById('text');
+if (annoText.innerText === ""){
+    anno.classList.add('hidden');
+    document.getElementById('sched-head').classList.remove('mt-4');
 }
